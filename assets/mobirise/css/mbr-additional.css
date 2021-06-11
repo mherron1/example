@@ -1170,3 +1170,24 @@ a {
 .cid-s48P1Icc8J .media-container-row .row-copirayt p {
   width: 100%;
 }
+.cid-sA34DiFZQX {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-sA34DiFZQX .mbr-overlay {
+  background-color: #ffffff;
+  opacity: 0.4;
+}
+.cid-sA34DiFZQX form .mbr-section-btn {
+  text-align: center;
+  width: 100%;
+}
+.cid-sA34DiFZQX form .mbr-section-btn .btn {
+  display: inline-flex;
+}
+@media (max-width: 991px) {
+  .cid-sA34DiFZQX form .mbr-section-btn .btn {
+    width: 100%;
+  }
+}
