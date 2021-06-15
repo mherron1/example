@@ -682,26 +682,78 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-sAlFtozCF5 {
-  background-image: url("../../../assets/images/background15.jpg");
+.cid-sAnhawat1v {
+  background-color: #9fdbf8;
 }
-.cid-sAlFtozCF5 .social-row .soc-item {
-  display: inline-block;
-  text-align: center;
-  margin-bottom: 1rem;
-  margin-right: .7rem;
+.cid-sAndQEx6bR {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
 }
-.cid-sAlFtozCF5 .social-row .soc-item .mbr-iconfont {
-  font-size: 32px;
-  border-radius: 50%;
-  padding: 0.6rem;
-  border: 2px solid #232323;
-  transition: all 0.3s;
+.cid-sAndQEx6bR img,
+.cid-sAndQEx6bR .item-img {
+  width: 100%;
+}
+.cid-sAndQEx6bR .item:focus,
+.cid-sAndQEx6bR span:focus {
+  outline: none;
+}
+.cid-sAndQEx6bR .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-sAndQEx6bR .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #fafafa;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-sAndQEx6bR .item-wrapper .item-content {
+    padding: 2rem 2rem 0;
+  }
+  .cid-sAndQEx6bR .item-wrapper .item-footer {
+    padding: 0 2rem 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-sAndQEx6bR .item-wrapper .item-content {
+    padding: 1rem 1rem 0;
+  }
+  .cid-sAndQEx6bR .item-wrapper .item-footer {
+    padding: 0 1rem 1rem;
+  }
+}
+.cid-sAndQEx6bR .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-sAndQEx6bR .mbr-section-title {
   color: #232323;
 }
-.cid-sAlFtozCF5 .social-row .soc-item .mbr-iconfont:hover {
-  background-color: #232323;
-  color: #ffffff;
+.cid-sAndQEx6bR .mbr-text,
+.cid-sAndQEx6bR .mbr-section-btn {
+  text-align: left;
+}
+.cid-sAndQEx6bR .item-title {
+  text-align: left;
+}
+.cid-sAndQEx6bR .item-subtitle {
+  text-align: left;
+}
+.cid-sAne7z3u6q {
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-sAne7z3u6q .video-wrapper iframe {
+  width: 100%;
+}
+.cid-sAne7z3u6q .mbr-section-title,
+.cid-sAne7z3u6q .mbr-section-subtitle,
+.cid-sAne7z3u6q .mbr-text {
+  text-align: center;
 }
 .cid-sA34DiFZQX {
   padding-top: 6rem;
