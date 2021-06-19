@@ -682,9 +682,6 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-sAnqMvbuRj {
-  background-image: linear-gradient(0deg, #6592e6 10%, #4479d9 100%) !important;
-}
 .cid-sAnoQlqnMb {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -710,7 +707,7 @@ a {
 .cid-sAnoJoEB5q {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #e9f1ff;
+  background-color: #fafafa;
 }
 .cid-sAnoJoEB5q .video-wrapper iframe {
   width: 100%;
