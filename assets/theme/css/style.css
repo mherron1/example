@@ -923,3 +923,40 @@ blockquote {
 	top: 0;
 	left: -2400px;
 }
+
+
+.nav-item:hover{
+  background-color: rgb(233, 233, 233);
+}
+
+@media (max-width: 767px) {
+ .nav-item:hover{
+   background-color: rgb(246, 246, 246);
+   margin-left:0;
+   text-align:left;
+   width:100%;
+   padding:0;
+ 
+ }
+
+ .navbar-toggler{
+   padding-top:50px !important;
+   }
+
+   .navbar-expand-lg{
+
+padding-top:20px !important;
+
+   }
+}
+
+
+.item-wrapper{
+max-width:90%;
+}
+
+.item-content{
+  display:none;
+}
+
+
