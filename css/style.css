@@ -900,6 +900,7 @@ nav.fixed-top .nav-item .nav-link:before {
 
 section.about .about-img {
     position: relative;
+    transform: scale(0.75);
 }
 
 section.about .about-img:before {
