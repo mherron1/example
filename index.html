@@ -37,74 +37,22 @@
 
         <style>
 
-.profileBox{
-    position:absolute;
-    height:50vh;
-    width:50vh;
-    background-image: url(./images/squareProfile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 0%;
-    transform: translate(675px, -200px);
-    opacity: 1;
-
-    border:2px solid rgba(255, 255, 255, 0.068);
-}
-
-        .iframeContainer{
-    padding-top:0px;
-    padding-bottom:0px;
-                }
 
 
-            .hs-responsive-embed-youtube {
-            position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-        padding-top: 25px;
-}
-.hs-responsive-embed-youtube iframe {
-position: absolute;
-width: 98%!important;
-height: 84%!important;
-left:50%;
-transform:translateX(-50%);
-
-}
+      
 
 .logo{
     visibility:hidden;
 }
 
 @media only screen and (min-width: 600px) {
-    .hs-responsive-embed-youtube iframe {
-position: absolute;
-width: 50%!important;
-height: 50%!important;
-left:50%;
-transform:translateX(-50%);
-}
-.iframeContainer{
-    max-height:750px;
-    padding-top:80px;
-    padding-bottom:80px;
 
-}
 .logo{
     visibility: visible;
 }
 }
 
-@media only screen and (min-width: 2100px) {
-    .hs-responsive-embed-youtube iframe {
-position: absolute;
-width: 30%!important;
-height: 30%!important;
-left:50%;
-transform:translateX(-50%);
-}
 
-}
 
 @media only screen and (max-width: 600px) {
    .navbar{
@@ -124,22 +72,6 @@ transform:translateX(-50%);
   
 }
 
-.profileBox{
-    position:absolute;
-    height:30vh;
-    width:30vh;
-    background-image: url(./images/profileImage.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    opacity: 1;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.733);
-    transform: translate(0px, -205px);
-    margin-left:20px;
-    border:none;
-    
-}
    
 
 }
@@ -219,9 +151,7 @@ transform:translateX(-50%);
             <div class="container">
                 <!--Banner Content-->
                 <div class="banner-caption">
-                    <div class="profileBox"></div>
-                    <br>
-                    <br>
+                
                     <p class="cd-headline clip mt-30">
                         <span>Shopify Expert and Developer</span><br>
                         <span class="blc">Specializing in</span>
@@ -320,15 +250,42 @@ transform:translateX(-50%);
         </section>
         <!--Services Section End-->
 
-
-
-        <div class="iframeContainer" >
-        <div class="hs-responsive-embed-youtube"><iframe src="https://www.youtube.com/embed/tjSiz7p9KdA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="" loading="lazy"></iframe></div>
-        </div>
-        <br>
-        <br>
-        <br>
-
+                    <!--About Section Start-->
+                    <section class="about pt-100 pb-100" data-scroll-index="1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                    <!--About Image-->
+                                    <div class="about-img">
+                                        <img src="images/squareProfile.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-6">
+                                    <!--About Content-->
+                                    <div class="about-content">
+                                        <div class="about-heading">
+                                            <h2>About Me.</h2>
+                                            <span>Web Developer Specializing in Shopify</span>
+                                        </div>
+                                        <p>Hi I'm <b>Michael</b>. I'm a freelance software developer with 3 years experience. I focus exclusively in the Shopify ecosystem and love helping clients to bring their products and services to the world with the leading e-commerce platform.</p>
+                                        <p>Whether you require a quick fix for a coding problem, or extensive projects, I will be happy to schedule a call the discuss solutions. </p>
+                                        <!--About Social Icons-->
+                                       <!-- <div class="social-icons">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                                        </div>-->
+                                        <span class="about-button">
+                                            <a class="main-btn" href="#" data-scroll-nav="5">Get in touch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--About Section End-->
 
 
 
