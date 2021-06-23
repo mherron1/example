@@ -50,6 +50,19 @@
 .logo{
     visibility: visible;
 }
+.services{
+    padding-bottom:50px;
+}
+
+.about{
+    padding-bottom:150px;
+    padding-top:150px;
+}
+.portfolio{
+    padding-top:150px;
+}
+
+
 }
 
 
@@ -179,7 +192,7 @@
         <!--Home Section End-->
 
         <!--Services Section Start-->
-        <section class="services  pt-100 pb-50" data-scroll-index="2">
+        <section class="services  pt-100" data-scroll-index="2">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -251,7 +264,7 @@
         <!--Services Section End-->
 
                     <!--About Section Start-->
-                    <section class="about pt-100 pb-100" data-scroll-index="1">
+                    <section class="about " data-scroll-index="1">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-5 col-md-6">
@@ -291,7 +304,7 @@
 
 
         <!--Portfolio Section Start-->
-        <center><section class="portfolio  pb-70" data-scroll-index="3" style="max-width:80%;">
+        <center><section class="portfolio" data-scroll-index="3" style="max-width:80%;">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -378,19 +391,20 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <!--Contact Form-->
-                        <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' />
+                        <form id='contact-form' action="https://formsubmit.co/michael@michaelherron.dev" method='POST'><input type='hidden' name='form-name' value='contactForm' />
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <!--name-->
-                                    <input type="text" class="form-control con-validate" id="contact-name" placeholder="Name" minlength=3 >
+                                    <input type="text" class="form-control con-validate" id="contact-name" placeholder="Name" name="name" minlength=3 >
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <!--email-->
-                                    <input type="email" class="form-control con-validate" id="contact-email" placeholder="Email" >
+                                    <input type="email" class="form-control con-validate" id="contact-email" name="email" placeholder="Email" >
                                 </div>
+                                <input type="hidden" name="_next" value="https://www.easy-apps.tech/messageDelivered.html">
                                 <div class="col-md-12 form-group">
                                     <!--message box-->
-                                    <textarea class="form-control con-validate" id="contact-message" placeholder="How can we help you?" rows=6 ></textarea>
+                                    <textarea class="form-control con-validate" id="contact-message" name="message" placeholder="How can we help you?" rows=6 ></textarea>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <!--contact button-->
