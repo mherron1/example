@@ -1114,6 +1114,7 @@ section.portfolio .portfolio-items .item {
 section.portfolio .portfolio-items .item .item-content {
     position: relative;
     overflow: hidden;
+    margin-bottom:20px;
 }
 
 section.portfolio .portfolio-items .item .item-content:before {
