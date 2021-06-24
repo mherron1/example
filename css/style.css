@@ -1132,11 +1132,11 @@ section.portfolio .portfolio-items .item .item-content {
 section.portfolio .portfolio-items .item .item-content:before {
     content: "";
     position: absolute;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(255, 255, 255, 0.678);
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    background-color: rgba(255, 255, 255, 0.767);
     opacity: 0;
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
