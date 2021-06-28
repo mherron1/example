@@ -77,28 +77,6 @@
 }
 
 
-.closeDemoButton{
-position:fixed;
-bottom:10%;
-left:50%;
-transform:translateX(-50%);
-background-color: rgb(0, 0, 0);
-color:white;
-border:2px solid rgb(0, 0, 0);
-width:125px;
-margin:0 auto;
-text-align: center;
-padding:5px;
-font-size:1.2rem;
-}
-
-.closeDemoButton:hover{
-    cursor:pointer;
-    background-color: rgb(255, 255, 255);
-color:rgb(0, 0, 0);
-border:2px solid rgb(0, 0, 0);
-
-}
       
 
 .logo{
@@ -150,7 +128,7 @@ section.portfolio{
 }
 .videoIframe{
   position: relative;
-  top:30%;
+  top:20%;
   overflow: hidden;
   width: 100%;
   max-height:30vh;
@@ -158,14 +136,6 @@ section.portfolio{
 }
 
 
-
-.closeDemoButton{
-
-bottom:20%;
-
-}
-
-   
 
 }
 
@@ -577,7 +547,7 @@ html{
             </div>
 
 
-            <div class="video-popup">
+            <div class="video-popup" onclick="closeDemo()">
                 
             </div>
 
@@ -612,7 +582,7 @@ html{
             let vid  = videos[vidNum]
 
             popup.innerHTML = ` <div class="videoIframe" ><iframe class="responsive-iframe"  src="https://youtube.com/embed/${vid}?autoplay=1" allowfullscreen frameborder="0"></iframe><br>
-            </div><div class = "closeDemoButton" onclick="closeDemo()">Close</div>`;
+            </div>`;
         }
 
         function closeDemo(){
