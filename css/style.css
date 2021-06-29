@@ -701,9 +701,10 @@ nav.fixed-top .nav-item .nav-link:before {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #000;
+    background-color: rgb(94, 105, 96);
+    
     z-index: 2;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .banner .banner-caption {

@@ -37,14 +37,33 @@
 
         <style>
 
+            .bannerImage{
+                width:600px;
+                position:absolute;
+                right:250px;
+                bottom:0px;
+                z-index:10;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .bannerImage{
+                width:400px;
+                position:absolute;
+                right:-150px;
+                bottom:-100px;
+                z-index:10;
+            }
+               .banner-caption{
+                 top: 33% !important;
+               }
+            }
+
+
             .projectTitle{
                 color:white;
                 zoom:1.3;
             }
 
-.banner-caption{
-        zoom:1.1;
-    }
 
 .video-popup{
     position:fixed;
@@ -86,7 +105,7 @@
 @media only screen and (min-width: 600px) {
 
     .banner-caption{
-        zoom:1.3;
+        zoom:1;
     }
 
 .logo{
@@ -226,6 +245,9 @@ html{
         <section id="home" class="banner" style="background-image: url('./images/laptop.jpg');" data-stellar-background-ratio=".7" data-scroll-index="0">
             <div class="container">
                 <!--Banner Content-->
+                <div class = "bannerImage">
+                    <img src="./images/trial.png">
+                </div>
                 <div class="banner-caption">
                 
                     <p class="cd-headline clip mt-30">
@@ -248,7 +270,7 @@ html{
                 </div>
             </div>
             <!--Creative Background Svg-->
-            <svg id="home-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 300" preserveAspectRatio="none">
+            <svg id="home-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 300" preserveAspectRatio="none" style="z-index:100000;">
                 <path class="p-curve" d="M0,96.1c109.9,67.5,145.1,201.1,329.6,202.5S1043.2,99.5,1400,0v300H0V96.1z"/>
             </svg>
         </section>
