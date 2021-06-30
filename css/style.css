@@ -624,7 +624,7 @@ nav.navbar .nav-item .nav-link:before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #000;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -899,7 +899,7 @@ nav.fixed-top .nav-item .nav-link:before {
 /*============ 5. About Section ============*/
 
 section.about{
-background-color: rgba(212, 228, 237, 0.637);
+background-color: rgb(255, 255, 255);
 padding-top:100px;
 padding-bottom:120px;
 
@@ -919,7 +919,7 @@ section.about .about-img {
 
 section.about .about-img:before {
     content: "";
-    background-color: rgba(138, 163, 177, 0.26);
+    background-color: rgba(219, 223, 224, 0.596);
     width: 100%;
     height: 100%;
     position: absolute;
