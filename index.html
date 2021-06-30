@@ -38,12 +38,18 @@
         <style>
 
             .bannerImage{
-                width:600px;
+                width:50%;
+                max-width:650px;
                 position:absolute;
-                right:250px;
-                bottom:0px;
+                right:100px;
+                bottom:-100px;
                 z-index:10;
             }
+
+            .banner-caption{
+                 left:10%;
+               }
+
 
             @media only screen and (max-width: 600px) {
                 .bannerImage{
@@ -70,7 +76,7 @@
     top:0;
     height:100vh;
     width:100%;
-    background-color: rgba(255, 255, 255, 0.829);
+    background-color: rgba(0, 0, 0, 0.829);
     display:none;
     z-index:1000;
 }
@@ -105,7 +111,7 @@
 @media only screen and (min-width: 600px) {
 
     .banner-caption{
-        zoom:1;
+        zoom:1.2;
     }
 
 .logo{
@@ -164,7 +170,6 @@ section.portfolio{
     padding:10px 25px;
     background-color: none;
     border:1px solid white;
-    
     font-size: 1.3rem;
 }
 
@@ -249,14 +254,15 @@ html{
                     <img src="./images/trial.png">
                 </div>
                 <div class="banner-caption">
+                    <h1></h1>
                 
                     <p class="cd-headline clip mt-30">
                         <span>Shopify Expert and Developer</span><br>
                         <span class="blc">Specializing in</span>
                         <span class="cd-words-wrapper">
-                            <b class="is-visible" style="color:rgb(117, 224, 117)">Store Setup.</b>
-                            <b style="color:rgb(117, 224, 117)">Theme Development.</b>
-                            <b style="color:rgb(117, 224, 117)">Site Optimisation.</b>
+                            <b class="is-visible" style="color:rgb(20, 131, 25)">Store Setup.</b>
+                            <b style="color:rgb(20, 131, 25)">Theme Development.</b>
+                            <b style="color:rgb(20, 131, 25)">Site Optimisation.</b>
                         </span>
                     </p>
                     <br>

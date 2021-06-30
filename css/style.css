@@ -682,7 +682,6 @@ nav.fixed-top .nav-item .nav-link:before {
     background-color: #000;
 }
 
-
 /*============ 4. Banner Section============*/
 
 .banner {
@@ -701,8 +700,7 @@ nav.fixed-top .nav-item .nav-link:before {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(94, 105, 96);
-    
+    background-color: #D4E4ED;
     z-index: 2;
     opacity: 1;
 }
@@ -710,7 +708,7 @@ nav.fixed-top .nav-item .nav-link:before {
 .banner .banner-caption {
     top: 50%;
     position: absolute;
-    color: #fff;
+    color: rgb(0, 0, 0);
     z-index: 11;
     width: 100%;
     -webkit-transform: translateY(-50%);
@@ -721,13 +719,14 @@ nav.fixed-top .nav-item .nav-link:before {
 .banner .banner-caption h1 {
     font-size: 88px;
     font-weight: 900;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .banner .banner-caption p {
     font-size: 34px;
+    font-weight: 700;
     font-family: "Raleway", san-serif;
-    color: #eee;
+    color: rgb(0, 0, 0);
 }
 
 .cd-headline {
