@@ -899,7 +899,7 @@ nav.fixed-top .nav-item .nav-link:before {
 /*============ 5. About Section ============*/
 
 section.about{
-background-image: linear-gradient(to bottom, rgb(241, 241, 241) , rgb(238, 238, 238));
+background-color: rgba(212, 228, 237, 0.637);
 padding-top:100px;
 padding-bottom:120px;
 
@@ -919,7 +919,7 @@ section.about .about-img {
 
 section.about .about-img:before {
     content: "";
-    background-color: #ffffff;
+    background-color: rgba(138, 163, 177, 0.26);
     width: 100%;
     height: 100%;
     position: absolute;
