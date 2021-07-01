@@ -39,209 +39,332 @@
         <style>
 
 
-.contact-btn{
-    padding:8px 25px;
-    background-color: #ed1c24;
-    border:2px solid #ed1c24;
-    color:rgb(255, 255, 255);
-    font-size: 1rem;
-    border-radius: 25px;
+            .navbar-toggler-icon{
+                position:absolute;
+                top:35px;
+                right:25px;
+            }
+
+.contact-btn {
+
+padding: 8px 25px;
+
+background-color: #ed1c24;
+
+border: 1px solid #ed1c24;
+
+color: rgb(255, 255, 255);
+
+
+font-size: 1rem;
+
+border-radius: 25px;
+
 }
 
-.contact-btn:hover{
-    background-color: white;
-    border:2px solid rgb(0, 0, 0);
-    color:rgb(0, 0, 0);
+.contact-btn:hover {
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+border: 1px solid rgb(0, 0, 0);
+
+color: rgb(0, 0, 0);
+
+
+
 }
 
-.nav-link.active{
-    color:black !important;
+.nav-link.active {
+
+color: black !important;
+
 }
 
 .nav-link:hover {
-    font-weight:bold;
-    color:black !important;
-    
+
+font-weight: bold;
+
+color: black !important;
+
 }
 
-            .bannerImage{
-                width:50%;
-                max-width:650px;
-                max-height:75vh;
-                position:absolute;
-                right:100px;
-                bottom:-100px;
-                z-index:10;
-            }
+.bannerImage {
 
-            .banner-caption{
-                 left:20%;
-               }
+width: 50%;
 
+max-width: 650px;
 
-            @media only screen and (max-width: 600px) {
+max-height: 75vh;
 
+position: absolute;
 
-                .contact-btn{
-    padding:7px 22px;
+left: 60%;
+
+bottom: -100px;
+
+z-index: 10;
+
+}
+
+.banner-caption {
+
+left: 15%;
+
+}
+
+@media only screen and (min-width: 1300px) {
+    .banner-caption {
+
+left: 20%;
+
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+.contact-btn {
+
+    padding: 7px 22px;
+
     background-color: #ed1c24;
-    border:2px solid #ed1c24;
-    color:rgb(255, 255, 255);
+
+    border: 2px solid #ed1c24;
+
+    color: rgb(255, 255, 255);
+
     font-size: 1.3rem;
+
     border-radius: 25px;
+
 }
 
-.contact-btn:hover{
+.contact-btn:hover {
+
     background-color: white;
-    border:2px solid rgb(0, 0, 0);
-    color:rgb(0, 0, 0);
+
+    border: 2px solid rgb(0, 0, 0);
+
+    color: rgb(0, 0, 0);
+
 }
 
-                .bannerImage{
-                width:400px;
-                position:absolute;
-                right:-150px;
-                bottom:-100px;
-                z-index:10;
-            }
-               .banner-caption{
-                 top: 33% !important;
-                 left:10%;
-               }
-            }
+.bannerImage {
 
+    width: 400px;
 
-            .projectTitle{
-                color:white;
-                zoom:1.3;
-            }
+    position: absolute;
+    left:20%;
 
+    bottom: -100px;
 
-.video-popup{
-    position:fixed;
-    top:0;
-    height:100vh;
-    width:100%;
-    background-color: rgba(0, 0, 0, 0.829);
-    display:none;
-    z-index:1000;
+    z-index: 10;
+
 }
 
-.videoIframe{
-  position: relative;
-  overflow: hidden;
-  height:100%;
-  width:100%;
-  max-height:524px;
-  max-width:900px;
-  margin:10% auto;
+.banner-caption {
+
+    top: 33% !important;
+
+    left: 10%;
+
+}
+
+}
+
+.projectTitle {
+
+color: white;
+
+zoom: 1.3;
+
+}
+
+.video-popup {
+
+position: fixed;
+
+top: 0;
+
+height: 100vh;
+
+width: 100%;
+
+background-color: rgba(0, 0, 0, 0.829);
+
+display: none;
+
+z-index: 1000;
+
+}
+
+.videoIframe {
+
+position: relative;
+
+overflow: hidden;
+
+height: 100%;
+
+width: 100%;
+
+max-height: 524px;
+
+max-width: 900px;
+
+margin: 10% auto;
+
 }
 
 .responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+bottom: 0;
+
+right: 0;
+
+width: 100%;
+
+height: 100%;
+
 }
 
+.logo {
 
-      
+visibility: hidden;
 
-.logo{
-    visibility:hidden;
-    
-    
 }
 
 @media only screen and (min-width: 600px) {
 
+.bannerImage {
 
-    .bannerImage{
-                width:50%;
-                max-width:650px;
-                max-height:100vh;
-                position:absolute;
-                right:100px;
-                bottom:-100px;
-                z-index:10;
-            }
+    width: 50%;
 
-    .arrow{
-        display:none;
-    }
+    max-width: 650px;
 
+    max-height: 100vh;
 
-    .banner-caption{
-        zoom:1.5;
-    }
+    position: absolute;
 
-.logo{
+    bottom: -100px;
+
+    z-index: 10;
+
+}
+
+.arrow {
+
+    display: none;
+
+}
+
+.banner-caption {
+
+    zoom: 1.5;
+
+}
+
+.logo {
+
     visibility: visible;
-    color:black !important;
+
+    color: black !important;
+
 }
-.logo:hover{
+
+.logo:hover {
+
     color: rgb(59, 59, 59) !important;
-}
-.services{
-    padding-bottom:50px;
-}
-
-.about{
-    padding-bottom:150px;
-    padding-top:150px;
-}
-section.portfolio{
-    padding-top:100px;
-}
-
 
 }
 
+.services {
 
+    padding-bottom: 50px;
+
+}
+
+.about {
+
+    padding-bottom: 150px;
+
+    padding-top: 150px;
+
+}
+
+section.portfolio {
+
+    padding-top: 100px;
+
+}
+
+}
 
 @media only screen and (max-width: 600px) {
-   .navbar{
-    padding:0px;
-    padding-bottom:20px;
- 
-}
-.navbar-toggler{
-    margin-right:15px;
+
+.navbar {
+
+    padding: 0px;
+
+    padding-bottom: 20px;
+
 }
 
-.nav-item{
-    zoom:1.2;
+.navbar-toggler {
+
+    margin-right: 15px;
+
 }
-.nav-item:hover{
+
+.nav-item {
+
+    zoom: 1.2;
+
+}
+
+.nav-item:hover {
+
     background-color: rgba(180, 180, 180, 0.061);
-  
-}
-.videoIframe{
-  position: relative;
-  top:20%;
-  overflow: hidden;
-  width: 100%;
-  max-height:30vh;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-
 
 }
 
+.videoIframe {
 
+    position: relative;
 
+    top: 20%;
 
-body{
-    opacity:0.0;
-    transition-duration: 0.5s;
-   
+    overflow: hidden;
+
+    width: 100%;
+
+    max-height: 30vh;
+
+    padding-top: 56.25%;
+
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
 }
-html{
-    background-color: rgb(0, 0, 0);
+
+}
+
+body {
+
+opacity: 0.0;
+
+transition-duration: 0.5s;
+
+}
+
+html {
+
+background-color: rgb(0, 0, 0);
+
 }
 
 </style>
@@ -311,12 +434,15 @@ html{
                     <h1 style="font-size:2.5rem;">Shopify Expert</h1>
                 
                     <p class="cd-headline clip mt-30">
-                        <span> Hi, I'm Michael. I'm a Web Developer</span><br>
-                        <span class="blc">Specializing in</span>
+                        <span>Hi, I'm Michael. I'm a Web </span><br>
+                        <span>Developer Specializing in </span><br>
+                        
+                        
+                        <span class="blc">Shopify</span>
                         <span class="cd-words-wrapper">
-                            <b class="is-visible" style="color:#ed1c24;">Store Setup.</b>
-                            <b style="color:#ed1c24;">Theme Development.</b>
-                            <b style="color:#ed1c24;">Site Optimisation.</b>
+                            <b class="is-visible" style="color:#ed1c24; ">Store Setup.</b>
+                            <b style="color:#ed1c24; ">Theme Development.</b>
+                            <b style="color:#ed1c24; ">Site Optimisation.</b>
                         </span>
                     </p>
                     <br>
