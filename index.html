@@ -39,36 +39,38 @@
         <style>
 
 
+.landing-btn{
+    width:125px;
+    color:white;
+    background-color: #ed1c24;
+    padding:4px 15px;
+    border:1px solid #ed1c24;
+    transition:0.2s;
+}
+.landing-btn:hover{
+    background-color: rgba(255, 255, 255, 0.564);
+    color: black;
+    border:1px solid black;
+}
+
+.contact-btn{
+    color:white;
+    background-color: #ed1c24;
+    padding:4px 15px;
+    border:1px solid #ed1c24;
+    transition:0.2s;
+}
+
+
+
+
             .navbar-toggler-icon{
                 position:absolute;
                 top:35px;
                 right:25px;
             }
 
-.contact-btn {
 
-padding: 8px 25px;
-background-color: #ed1c24;
-
-border: 1px solid #ed1c24;
-
-color: rgb(255, 255, 255);
-
-font-size: 1rem;
-
-border-radius: 25px;
-
-}
-
-.contact-btn:hover {
-
-    background-color: rgba(255, 255, 255, 0.335);
-
-border: 1px solid rgb(0, 0, 0);
-
-color: rgb(0, 0, 0);
-
-}
 
 .nav-link.active {
 
@@ -119,27 +121,6 @@ left: 20%;
 @media only screen and (max-width: 750px) {
 
 
-    .contact-btn {
-
-        background-color: rgba(255, 255, 255, 0.335);
-
-border: 1px solid rgb(0, 0, 0);
-
-color: rgb(0, 0, 0);
-
-
-
-}
-
-.contact-btn:hover {
-
-    background-color: #ed1c24;
-
-border: 1px solid #ed1c24;
-
-color: rgb(255, 255, 255);
-
-}
 
     .banner{
         background-position: -200px;
@@ -157,20 +138,7 @@ visibility: hidden;
 
 }
 
-.contact-btn {
 
-    padding: 12px 22px;
-
-    font-size: 1.3rem;
-
-    border-radius: 25px;
-
-}
-
-.contact-btn:hover {
-
-
-}
 
 .bannerImage {
 
@@ -469,7 +437,7 @@ background-color: rgb(255, 255, 255);
                     </p>
                     <br>
                
-                     <a class="contact-btn" href="#" data-scroll-nav="5">Get in Touch</a>
+                     <a href="#" data-scroll-nav="5"><div class="landing-btn">Get In Touch</div></a>
               
 
                 </div>
@@ -639,6 +607,21 @@ background-color: rgb(255, 255, 255);
                 </div>
                 <div class="row portfolio-items">
                     <!--Portfolio Item-->
+                    <div class="col-lg-4 col-md-6 item application">
+                        <div class="item-content" style="border-radius: 15px; border:1px solid rgba(0, 0, 0, 0.098);">
+                            <img src="images/united-and-free.jpg" alt="">
+                            <div class="item-overlay">
+                                <h6 class="projectTitle">United and Free</h6>
+                                <br>
+                                <div class="icons">
+                                    <span class="icon link">                                   
+                                        <center><button class="contact-btn" style="background-color: rgb(255, 255, 255); color:black; border: 0px solid black;" onclick="window.location.href='https://unitedandfree.com'">Demo</button></center>
+                                    </span>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item application">
                         <div class="item-content" style="border-radius: 15px;">
                             <img src="images/fashion.jpg" alt="">
