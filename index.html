@@ -127,9 +127,9 @@ left: 15%;
 @media only screen and (min-width: 1300px) {
     .banner-caption {
 
-left: 20%;
+  left: 20%;
 
-}
+   }
 }
 
 @media only screen and (max-width: 750px) {
@@ -142,12 +142,7 @@ left: 20%;
 
     .dtHeadingText{
     display:none;
-}
-
-
-    .logo {
-
-visibility: hidden;
+    }
 
 
 }
@@ -175,7 +170,6 @@ visibility: hidden;
 
 }
 
-}
 
 .projectTitle {
 
@@ -369,6 +363,29 @@ background-color: rgb(255, 255, 255);
 
 }
 
+
+.logo_mobile{
+        display:none;
+    }
+
+@media only screen and (max-width: 475px) {
+
+    .logo{
+        visibility: hidden;
+    }
+
+    .logo_mobile{
+        display:block;
+        position:absolute;
+        z-index:100;
+        left:35px;
+        top:35px;
+        font-weight:bold;
+        font-size:20px;
+    }
+
+}
+
 </style>
 
 <script>
@@ -388,12 +405,13 @@ background-color: rgb(255, 255, 255);
         <!--Preloader-->
 
         <!--Navbar Start-->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="z-index:10000000">
             <div class="container">
                 <!-- LOGO -->
                 <a class="navbar-brand logo" href="" data-scroll-nav="0"  style = "transform:translateY(-9px);">
                   <i class="fa fa-code" style = "font-size: 48px; color:#ed1c24; transform:translateY(7px);"></i> Michael Herron 
                 </a>
+                <div class="logo_mobile">michaelherron.dev</div>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
                     <span class="navbar-toggler-icon"></span>
