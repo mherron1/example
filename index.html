@@ -39,52 +39,36 @@
         <style>
 
 
-.landing-btn{
-    width:125px;
-    color:white;
-    background-color: #ed1c24;
-    padding:4px 15px;
-    border:1px solid #ed1c24;
-    transition:0.2s;
-}
-.landing-btn:hover{
-    background-color: rgba(255, 255, 255, 0.564);
-    color: black;
-    border:1px solid black;
-}
-
-@media only screen and (max-width: 475px) {
-    .landing-btn{
-    width:150px;
-    color:white;
-    background-color: #ed1c24;
-    padding:7px 20px;
-    font-size:18px;
-    border:1px solid #ed1c24;
-    transition:0.2s;
-  }
-
-}
-
-
-.contact-btn{
-    color:white;
-    background-color: #ed1c24;
-    padding:6px 15px;
-    border:1px solid #ed1c24;
-    transition:0.2s;
-}
-
-
-
-
             .navbar-toggler-icon{
                 position:absolute;
                 top:35px;
                 right:25px;
             }
 
+.contact-btn {
 
+padding: 8px 25px;
+background-color: #ed1c24;
+
+border: 1px solid #ed1c24;
+
+color: rgb(255, 255, 255);
+
+font-size: 1rem;
+
+border-radius: 25px;
+
+}
+
+.contact-btn:hover {
+
+    background-color: rgba(255, 255, 255, 0.335);
+
+border: 1px solid rgb(0, 0, 0);
+
+color: rgb(0, 0, 0);
+
+}
 
 .nav-link.active {
 
@@ -127,14 +111,35 @@ left: 15%;
 @media only screen and (min-width: 1300px) {
     .banner-caption {
 
-  left: 20%;
+left: 20%;
 
-   }
+}
 }
 
 @media only screen and (max-width: 750px) {
 
 
+    .contact-btn {
+
+        background-color: rgba(255, 255, 255, 0.335);
+
+border: 1px solid rgb(0, 0, 0);
+
+color: rgb(0, 0, 0);
+
+
+
+}
+
+.contact-btn:hover {
+
+    background-color: #ed1c24;
+
+border: 1px solid #ed1c24;
+
+color: rgb(255, 255, 255);
+
+}
 
     .banner{
         background-position: -200px;
@@ -142,12 +147,30 @@ left: 15%;
 
     .dtHeadingText{
     display:none;
-    }
+}
+
+
+    .logo {
+
+visibility: hidden;
 
 
 }
 
+.contact-btn {
 
+    padding: 12px 22px;
+
+    font-size: 1.3rem;
+
+    border-radius: 25px;
+
+}
+
+.contact-btn:hover {
+
+
+}
 
 .bannerImage {
 
@@ -170,6 +193,7 @@ left: 15%;
 
 }
 
+}
 
 .projectTitle {
 
@@ -363,30 +387,6 @@ background-color: rgb(255, 255, 255);
 
 }
 
-
-.logo_mobile{
-        display:none;
-    }
-
-@media only screen and (max-width: 475px) {
-
-    .logo{
-        visibility: hidden;
-    }
-
-    .logo_mobile{
-        display:block;
-        position:absolute;
-        z-index:100;
-        left:40px;
-        width:210px;
-        top:30px;
-        font-weight:bold;
-        font-size:20px;
-    }
-
-}
-
 </style>
 
 <script>
@@ -406,13 +406,12 @@ background-color: rgb(255, 255, 255);
         <!--Preloader-->
 
         <!--Navbar Start-->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="z-index:10000000">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <!-- LOGO -->
                 <a class="navbar-brand logo" href="" data-scroll-nav="0"  style = "transform:translateY(-9px);">
                   <i class="fa fa-code" style = "font-size: 48px; color:#ed1c24; transform:translateY(7px);"></i> Michael Herron 
                 </a>
-                <a href="" data-scroll-nav="0"><div class="logo_mobile"> <i class="fa fa-code" style = "font-size: 24px; color:#ed1c24; transform:translate(-5px, 1px);"></i>michaelherron.dev</div></a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
                     <span class="navbar-toggler-icon"></span>
@@ -470,7 +469,7 @@ background-color: rgb(255, 255, 255);
                     </p>
                     <br>
                
-                     <a href="#" data-scroll-nav="5"><div class="landing-btn">Get In Touch</div></a>
+                     <a class="contact-btn" href="#" data-scroll-nav="5">Get in Touch</a>
               
 
                 </div>
@@ -593,9 +592,9 @@ background-color: rgb(255, 255, 255);
                                             <span>Web Developer Specializing in Shopify</span>
                                         </div>
                                         <p>Hi I'm <b>Michael</b>. I'm a freelance software developer with 3 years experience based in Ireland. I focus exclusively in the Shopify ecosystem and I love helping clients to bring their products and services to the world with the leading e-commerce platform.</p>
-                                        <p>For everything from complete store creations or extensive store cusomisations, to small design changes or bug fixes,  no job is too big or small. </p>
+                                        <p>From quick code fixes to extensive theme development and store setup projects, no job is too big or small. </p>
                                             
-                                        <p>Please don't hestitate to get in touch for a free consultation.</p>
+                                        <p>Please don't hestitation to get in touch for a free consultation.</p>
                                         <!--About Social Icons-->
                                        <!-- <div class="social-icons">
                                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -641,21 +640,6 @@ background-color: rgb(255, 255, 255);
                 <div class="row portfolio-items">
                     <!--Portfolio Item-->
                     <div class="col-lg-4 col-md-6 item application">
-                        <div class="item-content" style="border-radius: 15px; border:1px solid rgba(0, 0, 0, 0.098);">
-                            <img src="images/united-and-free.jpg" alt="">
-                            <div class="item-overlay">
-                                <h6 class="projectTitle">United & Free</h6>
-                                <br>
-                                <div class="icons">
-                                    <span class="icon link">                                   
-                                        <center><button class="contact-btn" style="background-color: rgb(255, 255, 255); color:black; border: 0px solid black;" onclick="window.location.href='https://unitedandfree.com'">View Site</button></center>
-                                    </span>  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item application">
                         <div class="item-content" style="border-radius: 15px;">
                             <img src="images/fashion.jpg" alt="">
                             <div class="item-overlay">
@@ -664,21 +648,6 @@ background-color: rgb(255, 255, 255);
                                 <div class="icons">
                                     <span class="icon link">                                   
                                             <center><button class="contact-btn" style="background-color: rgb(255, 255, 255); color:black; border: 0px solid black;" onclick="showDemo(0)">Demo</button></center>
-                                    </span>  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item application">
-                        <div class="item-content" style="padding:8px;border-radius: 15px; border:1px solid rgba(0, 0, 0, 0.1);">
-                            <img src="images/bainisteoir.png" alt="">
-                            <div class="item-overlay">
-                                <h6 class="projectTitle">Bainisteoir</h6>
-                                <br>
-                                <div class="icons">
-                                    <span class="icon link">                                   
-                                        <center><button class="contact-btn" style="background-color: rgb(255, 255, 255); color:black; border: 0px solid black;" onclick="window.location.href='https://bainisteoirboardgame.ie/'">View Site</button></center>
                                     </span>  
                                 </div>
                             </div>
