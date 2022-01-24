@@ -56,7 +56,7 @@ color: rgb(255, 255, 255);
 
 font-size: 1rem;
 
-border-radius: 25px;
+border-radius: 5px;
 
 }
 
@@ -163,7 +163,7 @@ visibility: hidden;
 
     font-size: 1.3rem;
 
-    border-radius: 25px;
+    border-radius: 5px;
 
 }
 
@@ -428,9 +428,9 @@ background-color: rgb(255, 255, 255);
                         <li class="nav-item">
                             <a href="#" class="nav-link" data-scroll-nav="1" >About</a>
                         </li>
-                        <li class="nav-item">
+                       <!-- <li class="nav-item">
                             <a href="#" class="nav-link" data-scroll-nav="3">Works</a>
-                        </li>
+                        </li>-->
                       <!--  <li class="nav-item">
                             <a href="#" class="nav-link" data-scroll-nav="4">Blog</a>
                         </li>-->
@@ -612,6 +612,104 @@ background-color: rgb(255, 255, 255);
                         </div>
                     </section>
                     <!--About Section End-->
+
+
+
+
+                    <!---portfolio-->
+
+                    <!--
+
+                    <h1 class="portfolio_heading">RECENT PROJECTS</h1>
+
+            <div class="portfolio_grid">
+
+                <div class="portfolio_item" style="background-image: url(images/galaxyBox.png)">
+                    <a href=""><div class="visit_button">View</div></a>
+                </div>
+                <div class="portfolio_item" style="background-image: url(images/united-and-free.jpg)">
+                    <a href=""><div class="visit_button">View</div></a>
+                </div>
+                <div class="portfolio_item" style="background-image: url(images/bainisteoir.png)">
+                    <a href=""><div class="visit_button">View</div></a>
+
+                </div>
+            </div>
+
+            -->
+
+            <style>
+
+
+                .portfolio_heading{
+                    margin:0 auto;
+                    text-align:center;
+                    padding:0;
+                }
+
+            .portfolio_grid{
+                display:grid;
+                grid-template-columns: auto auto auto;
+                max-width:1200px;
+                margin: 50px auto;
+            }
+
+            .portfolio_item{
+                height:300px;
+                margin:10px;
+                background-color:#f8f8f8;
+                background-size:cover;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                position:relative;
+            }
+
+            .portfolio_item:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            }
+
+            .visit_button{
+                    padding:10px;
+                    background-color:white;
+                    font-weight:bold;
+                    position:absolute;
+                    top:40%;
+                    left:50%;
+                    opacity:0;
+                    transform:translate(-50%, -50%);
+                    width:100px;;
+                    text-align:center;
+                    padding:10px;
+                    font-size:18px;
+                    transition:0.3s;
+                }
+
+            </style>
+
+            <Script>
+                let a = Array.from(document.querySelectorAll('.portfolio_item'))
+                
+                a.forEach((item, index)=>{
+                   item.addEventListener('mouseover', ()=>{
+                    document.querySelectorAll('.visit_button')[index].style.opacity ="1";
+                    document.querySelectorAll('.visit_button')[index].style.top ="50%";
+                })
+                })
+                
+                a.forEach((item, index)=>{
+                   item.addEventListener('mouseout', ()=>{
+                    document.querySelectorAll('.visit_button')[index].style.opacity ="0";
+                    document.querySelectorAll('.visit_button')[index].style.top ="40%";
+                })
+                })
+
+    
+            </Script>
+
+                    
+                    <!-- -->
+
+
+
 
     
 
