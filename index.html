@@ -473,9 +473,9 @@ background-color: rgb(255, 255, 255);
               
 
                 </div>
-                <div class="arrow">
+               <!-- <div class="arrow">
                     <a class="fa fa-chevron-circle-down fa-2x" href="#" data-scroll-nav="2" style="font-size: 66px; color:#ed1c24;"></a>
-                </div>
+                </div>-->
             </div>
             <!--Creative Background Svg-->
             <svg id="home-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 300" preserveAspectRatio="none" style="z-index:100000;">
@@ -594,7 +594,7 @@ background-color: rgb(255, 255, 255);
                                         <p>Hi I'm <b>Michael</b>. I'm a freelance software developer with 3 years experience based in Ireland. I focus exclusively in the Shopify ecosystem and I love helping clients to bring their products and services to the world with the leading e-commerce platform.</p>
                                         <p>From quick code fixes to extensive theme development and store setup projects, no job is too big or small. </p>
                                             
-                                        <p>Please don't hestitation to get in touch for a free consultation.</p>
+                                        <p>Please don't hestitate to get in touch for a free consultation.</p>
                                         <!--About Social Icons-->
                                        <!-- <div class="social-icons">
                                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -612,83 +612,6 @@ background-color: rgb(255, 255, 255);
                         </div>
                     </section>
                     <!--About Section End-->
-
-                    
-
-
-
-
-        <!--Portfolio Section Start-->
-        <center><section class="portfolio" data-scroll-index="3" style="max-width:80%;">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="heading text-center">
-                            <h6></h6>
-                            <h2>Recent Projects</h2>
-                        </div>
-                       <!-- <div class="portfolio-filter text-center">
-                            <ul>
-                                <li class="sel-item" data-filter="*">All</li>
-                                <li data-filter=".design">Web Design</li>
-                                <li data-filter=".application">Applications</li>
-                                <li data-filter=".development">Development</li>
-                            </ul>
-                        </div>
-                    </div>-->
-                </div>
-                <div class="row portfolio-items">
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item application">
-                        <div class="item-content" style="border-radius: 15px;">
-                            <img src="images/fashion.jpg" alt="">
-                            <div class="item-overlay">
-                                <h6 class="projectTitle">Movement Fashion</h6>
-                                <br>
-                                <div class="icons">
-                                    <span class="icon link">                                   
-                                            <center><button class="contact-btn" style="background-color: rgb(255, 255, 255); color:black; border: 0px solid black;" onclick="showDemo(0)">Demo</button></center>
-                                    </span>  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item design">
-                        <div class="item-content" style="border-radius: 15px;">
-                            <img src="images/fitnessSite.jpg" alt="">
-                            <div class="item-overlay">
-                                <h6 class="projectTitle">EssentialFitness.ie</h6>
-                                <br>
-                                <div class="icons">
-                                    <span class="icon link">                                   
-                                        <center><button class="contact-btn"  style="background-color: rgb(255, 255, 255); color:black; border: 0px solid black;" onclick="showDemo(1)">Demo</button></center>
-                                    </span>  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item development" >
-                        <div class="item-content" style="border-radius: 15px;">
-                            <img src="images/galaxyBox.png" alt="">
-                            <div class="item-overlay">
-                                <h6 class="projectTitle">Galaxy Box</h6>
-                                <br>
-                                <div class="icons">
-                                    <span class="icon link">                                   
-                                        <center><button class="contact-btn"  style="background-color: rgb(255, 255, 255); color:black; border: 0px solid black;" onclick="showDemo(2)">Demo</button></center>
-                                    </span>  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-        </section></center>
-        <!--Portfolio Section End-->
-
 
     
 
@@ -803,24 +726,4 @@ background-color: rgb(255, 255, 255);
 
     </body>
 
-    <script>
-
-        let videos = ["egJJpekOuUQ","wMCMOheWuGE", "Z9nEwH883XM" ]
-
-        function showDemo(vidNum){
-            let popup = document.querySelector('.video-popup');
-            popup.style.display = "block";
-
-            let vid  = videos[vidNum]
-
-            popup.innerHTML = ` <div class="videoIframe" ><iframe class="responsive-iframe"  src="https://youtube.com/embed/${vid}?autoplay=1" allowfullscreen frameborder="0"></iframe><br>
-            </div>`;
-        }
-
-        function closeDemo(){
-            let popup = document.querySelector('.video-popup');
-            popup.style.display = "none";
-            popup.innerHTML = ``;
-        }
-    </script>
 </html>
