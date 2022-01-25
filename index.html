@@ -257,6 +257,29 @@ height: 100%;
 
 }
 
+@media only screen and (max-width: 900px) {
+.contact-nav{
+  color:white !important;
+  background-color: #ed1c24;
+  padding:5px 20px !important;
+  border-radius:20px;
+  margin-bottom:20px !important;
+  font-size:14px !important;
+}
+
+.contact-nav:active{
+  color:white !important;
+
+}
+
+.contact-nav:focus{
+  color:white !important;
+  text-decoration:none;
+
+}
+
+}
+
 
 @media only screen and (min-width: 750px) {
 
@@ -309,17 +332,10 @@ height: 100%;
 
 }
 
-.about {
-
-    padding-bottom: 150px;
-
-    padding-top: 150px;
-
-}
 
 section.portfolio {
 
-    padding-top: 100px;
+    padding-top:0px;
 
 }
 
@@ -435,7 +451,7 @@ background-color: rgb(255, 255, 255);
                             <a href="#" class="nav-link" data-scroll-nav="4">Blog</a>
                         </li>-->
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-scroll-nav="5">Contact</a>
+                            <a href="#" class="nav-link contact-nav" data-scroll-nav="5">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -617,72 +633,146 @@ background-color: rgb(255, 255, 255);
 
 
                     <!---portfolio-->
+<!--<div class="gallery-container" >
+                    
+           <div class="project-gallery">
+  
+            <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
+                <div class="overlay">
+      <h2>Project Name</h2>
+      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
+      <a class="overlay-item--button" href="#">Live</a>
+    </div>
+  </div>
+  
+  <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
+    <div class="overlay">
+      <h2>Project Name</h2>
+      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
+      <a class="overlay-item--button" href="#">Live</a>
+    </div>
+  </div>
+  
+  <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
+    <div class="overlay">
+      <h2>Project Name</h2>
+      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
+      <a class="overlay-item--button" href="#">Live</a>
+    </div>
+  </div>
 
-                    <!--
+  </div>
+  </div>
 
-                    <h1 class="portfolio_heading">RECENT PROJECTS</h1>
+  <div class="gallery-container">
+                    
+    <div class="project-gallery">
 
-            <div class="portfolio_grid">
 
-                <div class="portfolio_item" style="background-image: url(images/galaxyBox.png)">
-                    <a href=""><div class="visit_button">View</div></a>
-                </div>
-                <div class="portfolio_item" style="background-image: url(images/united-and-free.jpg)">
-                    <a href=""><div class="visit_button">View</div></a>
-                </div>
-                <div class="portfolio_item" style="background-image: url(images/bainisteoir.png)">
-                    <a href=""><div class="visit_button">View</div></a>
+        <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
+            <div class="overlay">
+      <h2>Project Name</h2>
+      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
+      <a class="overlay-item--button" href="#">Live</a>
+    </div>
+  </div>
+  <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
+    <div class="overlay">
+      <h2>Project Name</h2>
+      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
+      <a class="overlay-item--button" href="#">Live</a>
+    </div>
+  </div>
+  <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
+    <div class="overlay">
+      <h2>Project Name</h2>
+      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
+      <a class="overlay-item--button" href="#">Live</a>
+    </div>
+  </div>
+  
+</div>
 
-                </div>
-            </div>
+</div>-->
 
-            -->
+            
 
             <style>
 
+.gallery-container {
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
 
-                .portfolio_heading{
-                    margin:0 auto;
-                    text-align:center;
-                    padding:0;
-                }
+.project-gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.5em;
+}
 
-            .portfolio_grid{
-                display:grid;
-                grid-template-columns: auto auto auto;
-                max-width:1200px;
-                margin: 50px auto;
-            }
+.gallery-item {
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+}
 
-            .portfolio_item{
-                height:300px;
-                margin:10px;
-                background-color:#f8f8f8;
-                background-size:cover;
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                position:relative;
-            }
+.gallery-item:not(:last-child) { margin-bottom: 2rem; }
 
-            .portfolio_item:hover{
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-            }
+.gallery-item .overlay { opacity: 0; transition: opacity .15s ease-in; }
+.gallery-item:hover  .overlay, .gallery-item:focus  .overlay, .gallery-item:active .overlay { opacity: 1; transition: opacity .15s ease-in; }
 
-            .visit_button{
-                    padding:10px;
-                    background-color:white;
-                    font-weight:bold;
-                    position:absolute;
-                    top:40%;
-                    left:50%;
-                    opacity:0;
-                    transform:translate(-50%, -50%);
-                    width:100px;;
-                    text-align:center;
-                    padding:10px;
-                    font-size:18px;
-                    transition:0.3s;
-                }
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0; left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(53, 53, 53, 0.65);
+}
 
+.overlay * {
+  max-width: 15em;
+  color: #fff;
+}
+.overlay a {
+  text-decoration: none;
+}
+.overlay-item--button {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.875em;
+}
+.overlay-item--button:hover,
+.overlay-item--button:focus,
+.overlay-item--button:active {
+  background: #fff;
+  color: #85144b;
+}
+
+@media (min-width: 32em) {
+}
+
+@media (min-width: 64em) {
+  .gallery-item:not(:last-child) { margin-right: 16px; margin-bottom: 0; }
+  .project-gallery { flex-direction: row; }
+}
             </style>
 
             <Script>
