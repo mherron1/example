@@ -257,26 +257,27 @@ height: 100%;
 
 }
 
-@media only screen and (max-width: 900px) {
 .contact-nav{
-  color:white !important;
-  background-color: #ed1c24;
-  padding:5px 20px !important;
-  border-radius:20px;
-  margin-bottom:20px !important;
-  font-size:14px !important;
+display:none !important;
 }
 
-.contact-nav:active{
-  color:white !important;
+@media only screen and (max-width: 900px) {
 
-}
-
-.contact-nav:focus{
-  color:white !important;
-  text-decoration:none;
-
-}
+    .contact-nav-1{ 
+      display:none !important;
+     }
+   .contact-nav{
+     width:125px;
+     margin-left:50%;
+     transform:translateX(-50%);
+     display:block !important;
+     color:white !important;
+     background-color: #ed1c24;
+     padding:5px 20px !important;
+     border-radius:20px;
+     margin-bottom:20px !important;
+     font-size:14px !important;
+    }
 
 }
 
@@ -451,7 +452,9 @@ background-color: rgb(255, 255, 255);
                             <a href="#" class="nav-link" data-scroll-nav="4">Blog</a>
                         </li>-->
                         <li class="nav-item">
-                            <a href="#" class="nav-link contact-nav" data-scroll-nav="5">Contact</a>
+                            <a href="#" class="nav-link contact-nav-1" data-scroll-nav="5">Contact</a>
+                            <a href="#" class="contact-nav" data-scroll-nav="5" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">Contact</a>
+
                         </li>
                     </ul>
                 </div>
@@ -494,7 +497,7 @@ background-color: rgb(255, 255, 255);
                 </div>-->
             </div>
             <!--Creative Background Svg-->
-            <svg id="home-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 300" preserveAspectRatio="none" style="z-index:100000;">
+            <svg id="home-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 300" preserveAspectRatio="none" style="z-index:10;">
                 <path class="p-curve" d="M0,96.1c109.9,67.5,145.1,201.1,329.6,202.5S1043.2,99.5,1400,0v300H0V96.1z"/>
             </svg>
         </section>
@@ -846,7 +849,7 @@ background-color: rgb(255, 255, 255);
         </section>
         <!--Contact Section End-->
 
-        <!--Footer Start-->
+    <!--Footer Start-->
         <footer class="pt-50 pb-50">
             <div class="container">
                 <div class="row text-center">
@@ -896,7 +899,7 @@ background-color: rgb(255, 255, 255);
 
 
         </footer>
-        <!--Footer End-->
+    <!--Footer End-->
 
         <!--Jquery js-->
         <script src="js/jquery.min.js"></script>
