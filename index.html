@@ -1,941 +1,648 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="Personal, Portfolio, Creative">
-        <meta name="description" content="Michael Herron-Shopify Consulant">
-        <meta name="author" content="cosmos-themes">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>MH-Shopify Developer</title>
-        
+  <title>Michael Herron | Shopify Developer</title>
+  <meta name="description" content="Shopify developer specialising in custom storefront functionality, integrations, automation and e-commerce analytics. Available for freelance and agency partnerships.">
+  <meta name="theme-color" content="#101b2c">
 
-        <!-- favicon -->
-        <link href="images/favicon.png" rel="icon" type="image/png">
-
-        <!--Font Awesome css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <!--Bootstrap css-->
-        <link rel="stylesheet" href="css/bootstrap.css">
-
-        <!--Owl Carousel css-->
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-        <!--Magnific Popup css-->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900%7cOpen+Sans:400,600,700,800" rel="stylesheet">
-
-        <!--Site Main Style css-->
-        <link rel="stylesheet" href="css/style.css">
-
-
-
-        
-        <style>
-
-
-            .navbar-toggler-icon{
-                position:absolute;
-                top:35px;
-                right:25px;
-            }
-
-.contact-btn {
-
-padding: 8px 25px;
-background-color: #ed1c24;
-
-border: 1px solid #ed1c24;
-
-color: rgb(255, 255, 255);
-
-font-size: 1rem;
-
-border-radius: 5px;
-
-}
-
-.contact-btn:hover {
-
-    background-color: rgba(255, 255, 255, 0.335);
-
-border: 1px solid rgb(0, 0, 0);
-
-color: rgb(0, 0, 0);
-
-}
-
-.nav-link.active {
-
-color: black !important;
-
-}
-
-.nav-link:hover {
-
-font-weight: bold;
-
-color: black !important;
-
-}
-
-.bannerImage {
-
-width: 50%;
-
-max-width: 650px;
-
-max-height: 75vh;
-
-position: absolute;
-
-left: 50%;
-
-bottom: 300px;
-
-z-index: 10;
-
-}
-
-.banner-caption {
-
-left: 15%;
-
-}
-
-@media only screen and (min-width: 1300px) {
-    .banner-caption {
-
-left: 20%;
-
-}
-}
-
-@media only screen and (max-width: 750px) {
-
-
-    .contact-btn {
-
-        background-color: rgba(255, 255, 255, 0.335);
-
-border: 1px solid rgb(0, 0, 0);
-
-color: rgb(0, 0, 0);
-
-
-
-}
-
-.contact-btn:hover {
-
-    background-color: #ed1c24;
-
-border: 1px solid #ed1c24;
-
-color: rgb(255, 255, 255);
-
-}
-
-    .banner{
-        background-position: -200px;
+  <style>
+    :root {
+      --ink: #101b2c;
+      --muted: #637084;
+      --paper: #f7f8f5;
+      --white: #ffffff;
+      --line: #e2e7e4;
+      --accent: #c9f36b;
+      --green: #375d28;
+      --max: 1120px;
     }
 
-    .dtHeadingText{
-    display:none;
-}
+    * { box-sizing: border-box; }
 
+    html { scroll-behavior: smooth; }
 
-    .logo {
-
-visibility: hidden;
-
-
-}
-
-.contact-btn {
-
-    padding: 12px 22px;
-
-    font-size: 1.3rem;
-
-    border-radius: 5px;
-
-}
-
-.contact-btn:hover {
-
-
-}
-
-.bannerImage {
-
-    width: 400px;
-
-    position: absolute;
-    left:33%;
-
-    bottom: -25px;
-
-    z-index: 10;
-
-}
-
-.banner-caption {
-
-    top: 33% !important;
-
-    left: 10%;
-
-}
-
-}
-
-.projectTitle {
-
-color: white;
-
-zoom: 1.3;
-
-}
-
-.video-popup {
-
-position: fixed;
-
-top: 0;
-
-height: 100vh;
-
-width: 100%;
-
-background-color: rgba(0, 0, 0, 0.829);
-
-display: none;
-
-z-index: 1000;
-
-}
-
-.videoIframe {
-
-position: relative;
-
-overflow: hidden;
-
-height: 100%;
-
-width: 100%;
-
-max-height: 524px;
-
-max-width: 900px;
-
-margin: 10% auto;
-
-}
-
-.responsive-iframe {
-
-position: absolute;
-
-top: 0;
-
-left: 0;
-
-bottom: 0;
-
-right: 0;
-
-width: 100%;
-
-height: 100%;
-
-}
-
-.contact-nav{
-display:none !important;
-}
-
-@media only screen and (max-width: 900px) {
-
-    .contact-nav-1{ 
-      display:none !important;
-     }
-   .contact-nav{
-     width:125px;
-     margin-left:50%;
-     transform:translateX(-50%);
-     display:block !important;
-     color:white !important;
-     background-color: #ed1c24;
-     padding:5px 20px !important;
-     border-radius:20px;
-     margin-bottom:20px !important;
-     font-size:14px !important;
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
     }
 
-}
+    a { color: inherit; }
 
-
-@media only screen and (min-width: 750px) {
-
-
-.bannerImage {
-
-    width: 50%;
-
-    max-width: 800px;
-
-    max-height: 100vh;
-
-    position: absolute;
-
-    bottom: -100px;
-
-    z-index: 10;
-
-}
-
-.arrow {
-
-    display: none;
-
-}
-
-.banner-caption {
-
-    zoom: 1.5;
-
-}
-
-.logo {
-
-    visibility: visible;
-
-    color: black !important;
-
-}
-
-.logo:hover {
-
-    color: rgb(59, 59, 59) !important;
-
-}
-
-.services {
-
-    padding-bottom: 50px;
-
-}
-
-
-section.portfolio {
-
-    padding-top:0px;
-
-}
-
-}
-
-@media only screen and (max-width: 750px) {
-
-    .navbar-nav{
-        min-height:45vh !important;
+    a:focus-visible {
+      outline: 3px solid #719d34;
+      outline-offset: 4px;
     }
 
-.navbar {
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+    }
 
-    padding: 0px;
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
 
-    padding-bottom: 20px;
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-}
+    .brand {
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -0.7px;
+      font-size: 19px;
+    }
 
-.navbar-toggler {
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
 
-    margin-right: 15px;
+    .nav-links a {
+      font-size: 13px;
+      text-decoration: none;
+      color: var(--muted);
+    }
 
-}
+    .nav-links a:hover { color: var(--ink); }
 
-.nav-item {
+    .nav-cta {
+      padding: 10px 16px;
+      border: 1px solid var(--ink);
+      border-radius: 5px;
+      color: var(--ink) !important;
+    }
 
-    zoom: 1.2;
-    margin-top:20px;
+    .hero {
+      background: var(--ink);
+      color: var(--white);
+      padding: 100px 0 88px;
+      overflow: hidden;
+    }
 
-}
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #b5c2d2;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      font-weight: 700;
+    }
 
-.nav-item:hover {
+    .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
 
-    background-color: rgba(180, 180, 180, 0.061);
+    h1 {
+      max-width: 850px;
+      margin: 26px 0;
+      font-size: clamp(43px, 7vw, 76px);
+      line-height: 1.06;
+      letter-spacing: -4px;
+      font-weight: 750;
+    }
 
-}
+    h1 span { color: var(--accent); }
 
-.videoIframe {
+    .hero-copy {
+      max-width: 620px;
+      color: #c1cbd8;
+      font-size: 17px;
+      line-height: 1.8;
+    }
 
-    position: relative;
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
 
-    top: 20%;
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 19px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+      transition: transform 160ms ease, background 160ms ease;
+    }
 
-    overflow: hidden;
+    .button:hover { transform: translateY(-2px); }
 
-    width: 100%;
+    .button-primary {
+      background: var(--accent);
+      color: var(--ink);
+    }
 
-    max-height: 30vh;
+    .button-secondary {
+      border: 1px solid #526073;
+      color: var(--white);
+    }
 
-    padding-top: 56.25%;
+    .hero-note {
+      margin-top: 28px;
+      color: #9daabd;
+      font-size: 12px;
+    }
 
-    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    .skills-strip {
+      background: var(--accent);
+      padding: 17px 0;
+    }
 
-}
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px 24px;
+      font-size: 12px;
+      font-weight: 750;
+    }
 
-}
+    section { padding: 86px 0; }
 
-body {
+    .section-heading {
+      max-width: 690px;
+      margin-bottom: 36px;
+    }
 
-opacity: 0.0;
+    .section-label {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      font-weight: 800;
+    }
 
-transition-duration: 0.5s;
+    h2 {
+      margin: 12px 0;
+      font-size: clamp(31px, 4vw, 46px);
+      line-height: 1.15;
+      letter-spacing: -1.8px;
+    }
 
-}
+    .section-intro {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 610px;
+    }
 
-html {
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
 
-background-color: rgb(255, 255, 255);
+    .project {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      min-height: 290px;
+    }
 
-}
+    .project-number {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--green);
+    }
 
-</style>
+    .project h3 {
+      margin: 22px 0 10px;
+      font-size: 21px;
+      line-height: 1.3;
+      letter-spacing: -0.5px;
+    }
 
-<script>
-    document.addEventListener("DOMContentLoaded", ()=>{
-       document.querySelector('body').style.opacity = 1;
-    });
-</script>
+    .project p {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 20px;
+    }
 
-    </head>
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: auto;
+    }
 
-    <body>
+    .tag {
+      background: #f0f3ed;
+      color: #405144;
+      border-radius: 4px;
+      padding: 5px 8px;
+      font-size: 10px;
+      font-weight: 700;
+    }
 
-        <!--Preloader
-        <div class="preloader">
-            <div class="loader "></div>
-        </div>-->
-        <!--Preloader-->
+    .experience {
+      background: #edf0e9;
+    }
 
-        <!--Navbar Start-->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <!-- LOGO -->
-                <a class="navbar-brand logo" href="" data-scroll-nav="0"  style = "transform:translateY(-9px);">
-                  <i class="fa fa-code" style = "font-size: 48px; color:#ed1c24; transform:translateY(7px);"></i> Michael Herron 
-                </a>
+    .experience-layout {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 70px;
+    }
 
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    .experience-card {
+      border-left: 2px solid #b7d67c;
+      padding: 4px 0 4px 25px;
+    }
 
-                <div class="navbar-collapse collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active" data-scroll-nav="0" >Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-scroll-nav="2" >Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-scroll-nav="1" >About</a>
-                        </li>
-                       <!-- <li class="nav-item">
-                            <a href="#" class="nav-link" data-scroll-nav="3">Works</a>
-                        </li>-->
-                      <!--  <li class="nav-item">
-                            <a href="#" class="nav-link" data-scroll-nav="4">Blog</a>
-                        </li>-->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link contact-nav-1" data-scroll-nav="5">Contact</a>
-                            <a href="#" class="contact-nav" data-scroll-nav="5" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">Contact</a>
+    .experience-card h3 {
+      font-size: 21px;
+      margin: 0 0 4px;
+    }
 
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--Navbar End-->
+    .experience-meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
 
-        <!--Home Section Start-->
-        <section id="home" class="banner" style="background-image: url('./images/laptop.jpg');" data-stellar-background-ratio=".6" data-scroll-index="0">
-            <div class="container">
-                <!--Banner Content-->
-                <div class = "bannerImage">
-                    <!--<img src="./images/trial.png">-->
-                </div>
-                <div class="banner-caption">
-                    <h1 style="font-size:2.5rem;"><span class="dtHeadingText">Hire a </span> Shopify Expert</h1>
-                
-                    <p class="cd-headline clip mt-30">
-                        <span>Hi, I'm Michael.  </span><br>
-                        <span>I'm a Web Developer Specializing in   </span><br>
-                
-                        
-                        
-                        <span class="blc">Shopify</span>
-                        <span class="cd-words-wrapper">
-                            <b class="is-visible" style="color:#ed1c24; ">Store Setup.</b>
-                            <b style="color:#ed1c24; ">Theme Development.</b>
-                            <b style="color:#ed1c24; ">Site Optimisation.</b>
-                            <b style="color:#ed1c24; ">Store Migration</b>
-                        </span>
-                    </p>
-                    <br>
-               
-                     <a class="contact-btn" href="#" data-scroll-nav="5">Get in Touch</a>
-              
+    .experience-card p,
+    .experience-card li {
+      font-size: 14px;
+      color: #536071;
+    }
 
-                </div>
-               <!-- <div class="arrow">
-                    <a class="fa fa-chevron-circle-down fa-2x" href="#" data-scroll-nav="2" style="font-size: 66px; color:#ed1c24;"></a>
-                </div>-->
-            </div>
-            <!--Creative Background Svg-->
-            <svg id="home-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 300" preserveAspectRatio="none" style="z-index:10;">
-                <path class="p-curve" d="M0,96.1c109.9,67.5,145.1,201.1,329.6,202.5S1043.2,99.5,1400,0v300H0V96.1z"/>
-            </svg>
-        </section>
-        <!--Home Section End-->
+    .experience-card ul { padding-left: 20px; }
 
-        <!--Services Section Start-->
-        <section class="services  pt-100" data-scroll-index="2">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="heading text-center">
-                            <img src="images/shopify_logo_black.png" style="max-width: 250px;margin-bottom:20px;">
-                            <br>
-                            <h6>Services</h6>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon" style="overflow: hidden;">
-                                <img src="images/shopifyIcon.png" style="transform: scale(0.65)">
-                            </span>
-                            <h4>Store Setup</h4>
-                            <p>Complete Shopify store set-up, from choosing the great looking theme for your store, to configuring your products, galleries and menus to your exact preferences.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fa fa-code"></i>
-                            </span>
-                            <h4>Theme Development</h4>
-                            <p>Full theme development services. Adding required custom features or customising the layout and appearance of your existing theme to make  your store look and perform exactly the way you want.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fa fa-tachometer"></i>
-                            </span>
-                            <h4>Site Speed Optimisation</h4>
-                            <p>A slow website is a broken website.
-                               I can provide a complete tailored set of upgrades to optimise your site ensure acheive the best posiible loading time and user experience.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fa fa-gears"></i>
-                            </span>
-                            <h4>Debugging</h4>
-                            <p>If any aspects of your site is not working the way it should, I will find the source of the problem and correct it with a robust durable and solution.
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 40px;
+    }
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fa fa-exchange"></i>
-                            </span>
-                            <h4>Store Migration</h4>
-                            <p>If you already have an e-commerce website on a different platform such as Woo-commerce or Magento,  I can ensure a smooth and hassle free migration to the Shopify Platform. 
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fa fa-wrench"></i>
-                            </span>
-                            <h4>App Integration</h4>
-                            <p> I can reccomend, implement and configure any apps required to achieve your desired store functionality. 
-                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Services Section End-->
+    .capability {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
 
+    .capability h3 {
+      font-size: 16px;
+      margin: 0 0 6px;
+    }
 
+    .capability p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+    }
 
-        
+    .about-layout {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 70px;
+    }
 
-                    <!--About Section Start-->
-                    <section class="about " data-scroll-index="1">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-5 col-md-6">
-                                    <!--About Image-->
-                                    <div class="about-img">
-                                        <img src="images/squareProfile.png" alt="" style="border:0px solid rgb(184, 184, 184); border-radius:15px;">
-                                    </div>
-                                </div>
-                                <div class="col-lg-7 col-md-6">
-                                    <!--About Content-->
-                                    <div class="about-content">
-                                        <div class="about-heading">
-                                            <h2>About Me</h2>
-                                            <span>Web Developer Specializing in Shopify</span>
-                                        </div>
-                                        <p>Hi I'm <b>Michael</b>. I'm a freelance software developer with 3 years experience based in Ireland. I focus exclusively in the Shopify ecosystem and I love helping clients to bring their products and services to the world with the leading e-commerce platform.</p>
-                                        <p>From quick code fixes to extensive theme development and store setup projects, no job is too big or small. </p>
-                                            
-                                        <p>Please don't hestitate to get in touch for a free consultation.</p>
-                                        <!--About Social Icons-->
-                                       <!-- <div class="social-icons">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                                        </div>-->
-                                        <span class="about-button">
-                                            <a class="main-btn" href="#" data-scroll-nav="5">Get in touch</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!--About Section End-->
+    .about-copy {
+      font-size: 15px;
+      color: var(--muted);
+    }
 
+    .contact {
+      background: var(--ink);
+      color: var(--white);
+      padding: 76px 0;
+    }
 
+    .contact .section-label { color: var(--accent); }
 
+    .contact h2 {
+      max-width: 650px;
+      font-size: clamp(36px, 5vw, 54px);
+    }
 
-                    <!---portfolio-->
-<!--<div class="gallery-container" >
-                    
-           <div class="project-gallery">
-  
-            <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
-                <div class="overlay">
-      <h2>Project Name</h2>
-      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
-      <a class="overlay-item--button" href="#">Live</a>
+    .contact p {
+      max-width: 560px;
+      color: #c1cbd8;
+      font-size: 15px;
+    }
+
+    footer {
+      background: var(--ink);
+      border-top: 1px solid #354154;
+      color: #aab5c4;
+      padding: 22px 0;
+      font-size: 11px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer a { text-decoration: none; }
+
+    @media (max-width: 760px) {
+      .container { width: min(100% - 32px, var(--max)); }
+
+      .nav-links { gap: 14px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+
+      .hero { padding: 75px 0 65px; }
+      h1 { letter-spacing: -2.5px; }
+
+      section { padding: 64px 0; }
+
+      .project-grid { grid-template-columns: 1fr; }
+      .project { min-height: auto; }
+
+      .experience-layout,
+      .about-layout { grid-template-columns: 1fr; gap: 28px; }
+
+      .capability-grid { grid-template-columns: 1fr; }
+      .skills-list { justify-content: flex-start; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">Michael Herron<span>.</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Get in touch ↗</a>
+      </nav>
     </div>
-  </div>
-  
-  <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
-    <div class="overlay">
-      <h2>Project Name</h2>
-      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
-      <a class="overlay-item--button" href="#">Live</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="eyebrow">
+          <span class="dot"></span>
+          Shopify development · E-commerce · Integrations
+        </div>
+
+        <h1>
+          Shopify development<br>
+          that goes <span>beyond the theme.</span>
+        </h1>
+
+        <p class="hero-copy">
+          I'm Michael, a Shopify developer working with e-commerce brands
+          and agencies on custom storefront functionality, integrations,
+          automation and analytics.
+        </p>
+
+        <div class="actions">
+          <a class="button button-primary" href="#work">Explore my work ↘</a>
+          <a class="button button-secondary" href="mailto:michael@michaelherron.dev">
+            Discuss a project ↗
+          </a>
+        </div>
+
+        <p class="hero-note">
+          Freelance projects · Agency partnerships · Shopify development
+        </p>
+      </div>
+    </section>
+
+    <div class="skills-strip">
+      <div class="container skills-list">
+        <span>SHOPIFY LIQUID</span>
+        <span>JAVASCRIPT</span>
+        <span>SHOPIFY APIs</span>
+        <span>INTEGRATIONS</span>
+        <span>GA4 & GTM</span>
+        <span>AUTOMATION</span>
+      </div>
     </div>
-  </div>
-  
-  <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
-    <div class="overlay">
-      <h2>Project Name</h2>
-      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
-      <a class="overlay-item--button" href="#">Live</a>
-    </div>
-  </div>
 
-  </div>
-  </div>
+    <section id="work">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-label">Selected work & capabilities</div>
+          <h2>Solving practical e-commerce problems.</h2>
+          <p class="section-intro">
+            From bespoke storefront features to the systems behind an
+            online store, I work across the Shopify ecosystem to deliver
+            maintainable technical solutions.
+          </p>
+        </div>
 
-  <div class="gallery-container">
-                    
-    <div class="project-gallery">
-
-
-        <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
-            <div class="overlay">
-      <h2>Project Name</h2>
-      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
-      <a class="overlay-item--button" href="#">Live</a>
-    </div>
-  </div>
-  <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
-    <div class="overlay">
-      <h2>Project Name</h2>
-      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
-      <a class="overlay-item--button" href="#">Live</a>
-    </div>
-  </div>
-  <div class="gallery-item" style="background-image: url();"> <span style="opacity: 0; margin: 0; padding: 0; width: 100%;">This is a project by MHS Dev Club</span>
-    <div class="overlay">
-      <h2>Project Name</h2>
-      <p>Description of the team project. Describe its functionality, goals for the end user and development process.</p>
-      <a class="overlay-item--button" href="#">Live</a>
-    </div>
-  </div>
-  
-</div>
-
-</div>-->
-
-            
-
-            <style>
-
-.gallery-container {
-  width: 100%;
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-}
-
-.project-gallery {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 0.5em;
-}
-
-.gallery-item {
-  width: 300px;
-  height: 300px;
-  z-index: 1;
-  position: relative;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-}
-
-.gallery-item:not(:last-child) { margin-bottom: 2rem; }
-
-.gallery-item .overlay { opacity: 0; transition: opacity .15s ease-in; }
-.gallery-item:hover  .overlay, .gallery-item:focus  .overlay, .gallery-item:active .overlay { opacity: 1; transition: opacity .15s ease-in; }
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  position: absolute;
-  top: 0; left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(53, 53, 53, 0.65);
-}
-
-.overlay * {
-  max-width: 15em;
-  color: #fff;
-}
-.overlay a {
-  text-decoration: none;
-}
-.overlay-item--button {
-  box-sizing: border-box;
-  display: inline-block;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  padding: 0.5em;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 0.875em;
-}
-.overlay-item--button:hover,
-.overlay-item--button:focus,
-.overlay-item--button:active {
-  background: #fff;
-  color: #85144b;
-}
-
-@media (min-width: 32em) {
-}
-
-@media (min-width: 64em) {
-  .gallery-item:not(:last-child) { margin-right: 16px; margin-bottom: 0; }
-  .project-gallery { flex-direction: row; }
-}
-
-nav.navbar .nav-item .nav-link {
-    color: #000 !important;;
-}
-
-nav.navbar .nav-item .nav-link:active {
-    color: #000 !important;;
-}
-
-nav.navbar .nav-item .nav-link:focus {
-    color: #000 !important;
-}
-
-
-            </style>
-
-            <Script>
-                let a = Array.from(document.querySelectorAll('.portfolio_item'))
-                
-                a.forEach((item, index)=>{
-                   item.addEventListener('mouseover', ()=>{
-                    document.querySelectorAll('.visit_button')[index].style.opacity ="1";
-                    document.querySelectorAll('.visit_button')[index].style.top ="50%";
-                })
-                })
-                
-                a.forEach((item, index)=>{
-                   item.addEventListener('mouseout', ()=>{
-                    document.querySelectorAll('.visit_button')[index].style.opacity ="0";
-                    document.querySelectorAll('.visit_button')[index].style.top ="40%";
-                })
-                })
-
-    
-            </Script>
-
-                    
-                    <!-- -->
-
-
-
-
-    
-
-        <!--Contact Section Start-->
-        <section class="contact pt-100 pb-100" data-scroll-index="5">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="heading">
-                            <h6></h6>
-                            <h2>Contact</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <!--Contact Form-->
-                        <form id='contact-form' action="https://formsubmit.co/contact@michaelherron.dev" method='POST'><input type='hidden' name='form-name' value='contactForm' />
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <!--name-->
-                                    <input type="text" class="form-control con-validate" id="contact-name" placeholder="Name" name="name" minlength=3  >
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <!--email-->
-                                    <input type="email" class="form-control con-validate" id="contact-email" name="email" placeholder="Email" >
-                                </div>
-                                <input type="hidden" name="_next" value="https://michaelherron.dev/messagedelivered.html">
-                                <div class="col-md-12 form-group">
-                                    <!--message box-->
-                                    <textarea class="form-control con-validate" id="contact-message" name="message" placeholder="How can we help you?" rows=6  ></textarea>
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    <!--contact button-->
-                                    <button id="contact-submit" name="submit" class="mt-30 main-btn">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-number">01 / STOREFRONT</div>
+            <h3>Custom product experiences</h3>
+            <p>
+              Shopify theme development, product metafields, colour swatches
+              and custom variant-selection experiences designed around
+              a store's product architecture.
+            </p>
+            <div class="tags">
+              <span class="tag">Liquid</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Metafields</span>
+              <span class="tag">Theme development</span>
             </div>
-        </section>
-        <!--Contact Section End-->
+          </article>
 
-    <!--Footer Start-->
-        <footer class="pt-50 pb-50">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-3 col-sm-6">
-                        <!--Contant Item-->
-                        <div class="contact-info">
-                            <h5></h5>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <!--Contant Item-->
-                        <div class="contact-info">
-                            <h5>Phone No.</h5>
-                            <p>(+353) 89 258 3819</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <!--Contant Item-->
-                        <div class="contact-info">
-                            <h5>Email</h5>
-                            <p>contact@michaelherron.dev</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <!--Contant Item-->
-                        <div class="contact-info">
-                            <h5></h5>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <hr>
-                        <p class="copy pt-30">
-                            michaelherron.dev &copy; 2021. All Right Reserved
-                        </p>
-                    </div>
-                </div>
+          <article class="project">
+            <div class="project-number">02 / DATA & ANALYTICS</div>
+            <h3>E-commerce reporting & tracking</h3>
+            <p>
+              Analytics implementations and reporting workflows that connect
+              store data with tools used to monitor performance and support
+              better business decisions.
+            </p>
+            <div class="tags">
+              <span class="tag">GA4</span>
+              <span class="tag">GTM</span>
+              <span class="tag">Google Sheets</span>
+              <span class="tag">Looker Studio</span>
             </div>
+          </article>
 
-
-            <div class="video-popup" onclick="closeDemo()">
-                
+          <article class="project">
+            <div class="project-number">03 / INTEGRATIONS</div>
+            <h3>Automation & connected systems</h3>
+            <p>
+              Custom workflows and integrations across Shopify APIs,
+              Shopify Flow and subscription systems, helping e-commerce
+              operations work more efficiently.
+            </p>
+            <div class="tags">
+              <span class="tag">Shopify APIs</span>
+              <span class="tag">Shopify Flow</span>
+              <span class="tag">Recharge</span>
+              <span class="tag">Automation</span>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="experience" id="experience">
+      <div class="container experience-layout">
+        <div>
+          <div class="section-label">Experience</div>
+          <h2>Technical delivery, grounded in real client work.</h2>
+        </div>
 
-        </footer>
-    <!--Footer End-->
+        <div class="experience-card">
+          <h3>Shopify Front-End Developer</h3>
+          <div class="experience-meta">
+            JadePuma · Shopify & e-commerce agency · February 2022–Present
+          </div>
+          <p>
+            Working on Shopify development and e-commerce technical
+            projects across storefront customisation, integrations,
+            analytics and automation.
+          </p>
+          <ul>
+            <li>Customising Shopify themes and building bespoke storefront functionality.</li>
+            <li>Working with metafields, Shopify Flow, APIs and third-party apps.</li>
+            <li>Implementing analytics, tracking and automated reporting workflows.</li>
+            <li>Troubleshooting technical issues and extending existing e-commerce systems.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <!--Jquery js-->
-        <script src="js/jquery.min.js"></script>
-        <!--Bootstrap js-->
-        <script src="js/bootstrap.min.js"></script>
-        <!--Stellar js-->
-        <script src="js/jquery.stellar.js"></script>
-        <!--Animated Headline js-->
-        <script src="js/animated.headline.js"></script>
-                <!--ScrollIt js-->
-        <script src="js/scrollIt.min.js"></script>
+    <section id="expertise">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-label">Technical expertise</div>
+          <h2>Development across the Shopify ecosystem.</h2>
+        </div>
 
-        <script src="js/main.js"></script>
+        <div class="capability-grid">
+          <div class="capability">
+            <h3>Theme development</h3>
+            <p>Liquid, HTML, CSS, JavaScript, responsive layouts and theme customisation.</p>
+          </div>
+          <div class="capability">
+            <h3>Shopify platform</h3>
+            <p>Metafields, product data, Shopify Flow, APIs and app integrations.</p>
+          </div>
+          <div class="capability">
+            <h3>Analytics & tracking</h3>
+            <p>GA4, Google Tag Manager, event tracking and measurement troubleshooting.</p>
+          </div>
+          <div class="capability">
+            <h3>Reporting & automation</h3>
+            <p>Google Apps Script, ShopifyQL, Google Sheets and Looker Studio.</p>
+          </div>
+          <div class="capability">
+            <h3>Subscriptions & integrations</h3>
+            <p>Recharge-related workflows, third-party integrations and e-commerce operations.</p>
+          </div>
+          <div class="capability">
+            <h3>Development workflow</h3>
+            <p>Git, GitHub, Shopify CLI, debugging and working within existing codebases.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="about">
+      <div class="container about-layout">
+        <div>
+          <div class="section-label">A little about me</div>
+          <h2>A developer who understands the wider business.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I'm an Ireland-born developer specialising in Shopify and
+            e-commerce technology. My background combines software
+            development with business and analytical experience.
+          </p>
+          <p>
+            I enjoy solving problems that sit between the storefront,
+            business operations and the underlying data — whether that's
+            building custom product functionality, connecting systems,
+            or making reporting more useful.
+          </p>
+          <p>
+            I'm interested in working directly with e-commerce brands
+            and partnering with agencies that need dependable Shopify
+            development support.
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/michaelherron7/"
+               target="_blank" rel="noopener noreferrer">
+              Connect with me on LinkedIn ↗
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
 
-    </body>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-label">Have a project in mind?</div>
+        <h2>Let's build something that works.</h2>
+        <p>
+          Need help with a Shopify store, a technical integration or
+          additional development capacity for your agency? I'd be happy
+          to hear what you're working on.
+        </p>
+        <div class="actions">
+          <a class="button button-primary"
+             href="mailto:michael@michaelherron.dev?subject=Shopify%20Development%20Enquiry">
+            Email Michael ↗
+          </a>
+          <a class="button button-secondary"
+             href="https://www.linkedin.com/in/michaelherron7/"
+             target="_blank" rel="noopener noreferrer">
+            LinkedIn ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Michael Herron · Shopify Developer</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
-
-=========
